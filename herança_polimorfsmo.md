@@ -7,5 +7,5 @@ Classes e suas especificação:
 1. Classe Base (Classe Pai): A classe que concede as informações para a outra classe herdar;
 2. Classe Derivida (Classe Filha): É a classe que herda informações de outra classe;
 
-
+Usando o método herança tornamos o código mais limpo e linear, sem ter reptições desnecessárias que tornam o código complexo de de difícil manutenção. Para mantermos o código desta forma, devemos sempre criar a classe derivada somente com as implementações do caso geral.
 
