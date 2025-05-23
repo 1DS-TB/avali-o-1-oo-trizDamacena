@@ -1,17 +1,17 @@
-class Pokemon:
-    def __init__ (self, nome, altura, peso ,geracao):
+class DadosImportantes:
+    def __init__(self, nome, idade):
         self.nome = nome
-        self.altura = altura
-        self.peso = peso
-        self.geracao = geracao
+        self.idade = idade
 
-    def info (self):
-        return f"Nome: {self.nome}, Geração {self.geracao}"
-
-    def mostrar_informacoes(Pokemon):
-        def status(self):
-            return f"{self.nome} está dormindo"
-
-pokemo1 = Pokemon("Squirtle", 0.5, 0.9, "Primeira" )
-print(pokemo1.info())
-print(pokemo1.status)
+    def exibir(self):
+        return f"Nome: {self.nome}\nIdade: {self.idade}"
+    
+class InformacoesExtras(DadosImportantes):
+    def __init__(self, endereco, dataNascimento):
+         self.endereco = endereco
+         self.dataNascimento = dataNascimento
+    def exibir2(self):
+        return f"Endereço: {self.endereco}"
+    
+pessoa1 = InformacoesExtras(1,2)
+pessoa1.exibir()
